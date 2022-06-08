@@ -1,4 +1,6 @@
+using ErrorHandlingDll.FixTypes.Enumarions;
 using ErrorHandlingDll.ReturnTypes;
+using ErrorHandlingDll.Services;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -11,12 +13,11 @@ namespace ErrorHandlingDll.Middlewares
 {
   public class ErrorHandlingMiddleware : IMiddleware
   {
-   // private readonly HttpContent _context;
-    private readonly RequestDelegate _next;
-    public ErrorHandlingMiddleware(HttpContext context, RequestDelegate next)
+
+    private readonly ILoggerService _loggerService;
+    public ErrorHandlingMiddleware(ILoggerService loggerService)
     {
-    //  _context = = context;
-      _next = next;
+      _loggerService = loggerService;
     }
     public async Task InvokeAsync(HttpContext contex , RequestDelegate next)
     {
@@ -26,6 +27,7 @@ namespace ErrorHandlingDll.Middlewares
       }
       catch (Exception ex)
       {
+        await _loggerService.CaptureLogAsync(LogLevel.Error, ex , $"An Error Captured by ErrorHandlingMiddleware  : {ex.Message}");
         await HandleErrorResponse(contex);
       }
     }

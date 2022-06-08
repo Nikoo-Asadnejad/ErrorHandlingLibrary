@@ -60,6 +60,14 @@
             "Sentry.AspNetCore": {
               "target": "Package",
               "version": "[3.17.1, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.1, )"
             }
           },
           "imports": [

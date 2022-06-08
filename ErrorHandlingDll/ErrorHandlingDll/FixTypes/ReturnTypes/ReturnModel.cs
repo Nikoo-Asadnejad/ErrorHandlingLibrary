@@ -1,7 +1,7 @@
-using BankMicroservice.Persistances.Enumerations;
+
 using System.Net;
 
-namespace BankMicroservice.Persistances.ReturnTypes
+namespace ErrorHandlingDll.ReturnTypes
 {
   public class ReturnModel<T>
   {
@@ -13,62 +13,6 @@ namespace BankMicroservice.Persistances.ReturnTypes
     public ReturnModel()
     {
 
-    }
-
-    public ReturnModel(string title,T? data ,
-      ReturnModelTypes? type = null,HttpStatusCode? statusCode = null,
-      string message = null)
-    {
-      DataTitle = title;
-      Data = data;
-      switch (type)
-        {
-        case ReturnModelTypes.Success:
-          {
-            Data = data;
-            HttpStatusCode = HttpStatusCode.OK;
-            Message = message == null ? ReturnMessage.SuccessMessage : message;
-            
-          }
-          break;
-        case ReturnModelTypes.NotFound:
-          {
-            HttpStatusCode = HttpStatusCode.NotFound;
-            Message = message == null ? ReturnMessage.NotFoundMessage : message;
-          }
-          break;
-        case ReturnModelTypes.InternalServerError:
-          {
-            HttpStatusCode = HttpStatusCode.InternalServerError;
-            Message = message == null ? ReturnMessage.ServerErrorMessage : message;
-          }
-          break;
-        case ReturnModelTypes.BadRequest:
-          {
-            HttpStatusCode = HttpStatusCode.BadRequest;
-            Message = message == null ? ReturnMessage.BadRequestErrorMessage : message;
-
-          }
-          break;
-        case ReturnModelTypes.InvalidInput:
-          {
-            HttpStatusCode = HttpStatusCode.BadRequest;
-            Message = message != null ? ReturnMessage.InvalidInputDataErrorMessage : message;
-          }
-          break;
-        case ReturnModelTypes.DuplicationError:
-          {
-            HttpStatusCode = HttpStatusCode.BadRequest;
-            Message = message == null ? ReturnMessage.DuplicationErrorMessage : message;
-          }
-          break;
-        default:
-          {
-            HttpStatusCode = (HttpStatusCode)statusCode;
-            Message = message;
-          }
-          break;
-      }
     }
 
     public ReturnModel(string title , T data , HttpStatusCode statusCode , string message)

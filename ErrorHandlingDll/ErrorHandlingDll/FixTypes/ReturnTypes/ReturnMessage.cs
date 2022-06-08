@@ -1,4 +1,4 @@
-namespace BankMicroservice.Persistances.ReturnTypes
+namespace ErrorHandlingDll.ReturnTypes
 {
   public static class ReturnMessage
   {
