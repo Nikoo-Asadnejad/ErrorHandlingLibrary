@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b87405d0-ca87-455c-9249-0f384cce3811": {
+      "ProjectGuid": "b87405d0-ca87-455c-9249-0f384cce3811",
+      "DisplayName": "ErrorHandlingDll",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
