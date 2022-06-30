@@ -1,2 +1,5 @@
 # ErrorHandlingDll
-A Class library including services and middle wares to simplify error handling
+### A Class library which simplyfies Error Handling
+It includes :
+ - Services for logging via serilog or sentry
+ - A global Error Handling MiddleWare
