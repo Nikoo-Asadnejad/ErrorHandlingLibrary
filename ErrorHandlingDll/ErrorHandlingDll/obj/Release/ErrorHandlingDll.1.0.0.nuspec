@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ErrorHandlingDll</id>
+    <version>1.0.0</version>
+    <authors>ErrorHandlingDll</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.AspNetCore.Hosting.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Sentry" version="3.17.1" exclude="Build,Analyzers" />
+        <dependency id="Sentry.AspNetCore" version="3.17.1" exclude="Build,Analyzers" />
+        <dependency id="Serilog" version="2.11.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Console" version="4.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\bin\Release\net6.0\ErrorHandlingDll.dll" target="lib\net6.0\ErrorHandlingDll.dll" />
+  </files>
+</package>

@@ -1,7 +1,10 @@
 using ErrorHandlingDll.FixTypes.Enumarions;
+using ErrorHandlingDll.Middlewares;
 using ErrorHandlingDll.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using Sentry;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +15,10 @@ namespace ErrorHandlingDll.Configurations
 {
   public static class ErrorHandlingDllConfigurator
   {
-    public static void InjectServices(IServiceCollection services)
+    public static void InjectServices(IServiceCollection services, IConfiguration configuration)
     {
+      string sentryDsn = configuration["Sentry:Dsn"];
+      SentrySdk.Init(sentryDsn);
       services.AddTransient<SentryLoggerService>();
       services.AddTransient<SerilogLoggerService>();
       services.AddTransient<Func<LoggerIds, ILoggerService>>(serviceProvider => LoggerId =>
@@ -28,10 +33,10 @@ namespace ErrorHandlingDll.Configurations
       });
     }
 
-    //public static void ConfigureAppPipeline(WebApplication app)
-    //{
-
-    //}
+    public static void ConfigureAppPipeline(WebApplication app)
+    {
+      app.UseMiddleware<ErrorHandlingMiddleware>();
+    }
 
   }
 }

@@ -1,0 +1,12 @@
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\bin\Release\net6.0\ErrorHandlingDll.deps.json
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\bin\Release\net6.0\ErrorHandlingDll.dll
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\bin\Release\net6.0\ref\ErrorHandlingDll.dll
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\bin\Release\net6.0\ErrorHandlingDll.pdb
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\obj\Release\net6.0\ErrorHandlingDll.csproj.AssemblyReference.cache
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\obj\Release\net6.0\ErrorHandlingDll.GeneratedMSBuildEditorConfig.editorconfig
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\obj\Release\net6.0\ErrorHandlingDll.AssemblyInfoInputs.cache
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\obj\Release\net6.0\ErrorHandlingDll.AssemblyInfo.cs
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\obj\Release\net6.0\ErrorHandlingDll.csproj.CoreCompileInputs.cache
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\obj\Release\net6.0\ErrorHandlingDll.dll
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\obj\Release\net6.0\ref\ErrorHandlingDll.dll
+D:\web development\projects\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\ErrorHandlingDll\obj\Release\net6.0\ErrorHandlingDll.pdb
