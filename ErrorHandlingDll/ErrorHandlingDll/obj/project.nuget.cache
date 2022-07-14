@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a4b3x1doz9zuTzPXCGvDSV7qM38wdHL7jTBFc54NQpmSI4vs0Cgv2g9AgGkUba020ThjsAnP/6+c6AJxCdekeg==",
+  "dgSpecHash": "SKVrBMC8rP86+brZoBTzRCvf+4VqiJa4bb4YC8dAF8dyb2JWyhek+Oza9D5vPPfW3AO3FII79oJU4EBTACiKvA==",
   "success": true,
   "projectFilePath": "D:\\web development\\projects\\ErrorHandlingDll\\ErrorHandlingDll\\ErrorHandlingDll\\ErrorHandlingDll\\ErrorHandlingDll.csproj",
   "expectedPackageFiles": [
@@ -22,12 +22,14 @@
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\6.0.0\\microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\sentry\\3.17.1\\sentry.3.17.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\sentry.aspnetcore\\3.17.1\\sentry.aspnetcore.3.17.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\sentry.extensions.logging\\3.17.1\\sentry.extensions.logging.3.17.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\serilog\\2.11.0\\serilog.2.11.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\serilog.sinks.console\\4.0.1\\serilog.sinks.console.4.0.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
