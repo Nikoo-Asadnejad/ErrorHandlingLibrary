@@ -1,4 +1,5 @@
 using ErrorHandlingDll.FixTypes.Enumarions;
+using ErrorHandlingDll.Interfaces;
 using Sentry;
 using Serilog;
 using System;

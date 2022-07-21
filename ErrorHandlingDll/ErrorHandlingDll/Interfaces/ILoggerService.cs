@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ErrorHandlingDll.Services
+namespace ErrorHandlingDll.Interfaces
 {
   public interface ILoggerService
   {

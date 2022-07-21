@@ -1,4 +1,5 @@
 using ErrorHandlingDll.FixTypes.Enumarions;
+using ErrorHandlingDll.Interfaces;
 using ErrorHandlingDll.ReturnTypes;
 using ErrorHandlingDll.Services;
 using Microsoft.AspNetCore.Http;
