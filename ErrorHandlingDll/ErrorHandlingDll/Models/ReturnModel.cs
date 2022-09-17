@@ -42,6 +42,14 @@ namespace ErrorHandlingDll.ReturnTypes
       this.Message = message == null ? ReturnMessage.NotFoundMessage : message;
       return this;
     }
+
+    public ReturnModel<T> CreateUnAuthorizedModel(string title = null, string message = null)
+    {
+      this.HttpStatusCode = HttpStatusCode.Unauthorized;
+      this.DataTitle = title;
+      this.Message = message == null ? ReturnMessage.UnAuthorizedMessage : message;
+      return this;
+    }
     public ReturnModel<T> CreateServerErrorModel(string title = null, string message = null)
     {
       this.HttpStatusCode = HttpStatusCode.InternalServerError;
