@@ -17,7 +17,8 @@ namespace ErrorHandlingDll.ReturnTypes
 
     }
 
-    public ReturnModel(string title , T data , HttpStatusCode statusCode , string message , List<FieldErrorsModel> fieldErrors)
+    public ReturnModel(HttpStatusCode statusCode, T data = default  ,string? title = null,
+      string? message = null, List<FieldErrorsModel>? fieldErrors = null)
     {
       Data = data;
       DataTitle = title;
@@ -49,7 +50,6 @@ namespace ErrorHandlingDll.ReturnTypes
       this.Message = message == null ? ReturnMessage.UnAuthorizedMessage : message;
       return this;
     }
-
     public ReturnModel<T> CreateAccessDeniedModel(string title = null, string message = null)
     {
       this.HttpStatusCode = HttpStatusCode.Forbidden;
@@ -84,6 +84,13 @@ namespace ErrorHandlingDll.ReturnTypes
       this.HttpStatusCode = HttpStatusCode.BadRequest;
       this.DataTitle = title;
       this.Message = message == null ? ReturnMessage.DuplicationErrorMessage : message;
+      return this;
+    }
+    public ReturnModel<T> CreateUnSupportedMediaType(string title = null , string message =null)
+    {
+      this.HttpStatusCode = HttpStatusCode.UnsupportedMediaType;
+      this.DataTitle = title;
+      this.Message = message == null ? ReturnMessage.UnSupportedMediaTypeErrorMessage : message;
       return this;
     }
 

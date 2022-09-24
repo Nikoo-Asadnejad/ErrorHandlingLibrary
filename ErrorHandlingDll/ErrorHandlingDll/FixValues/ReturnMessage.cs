@@ -10,5 +10,6 @@ namespace ErrorHandlingDll.ReturnTypes
     public const string DuplicationErrorMessage = "داده ورودی تکراری است";
     public const string InvalidInputDataErrorMessage = "داده ورودی نا معتبر است";
     public const string BadRequestErrorMessage = "خطایی در دریافت اطلاعات رخ داده است";
+    public const string UnSupportedMediaTypeErrorMessage = "نوع داده وروردی اشتباه است";
   }
 }
